@@ -17,6 +17,13 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 50px;
         }
         header h1 {
             margin: 0;
@@ -55,11 +62,17 @@
             bottom: 0;
             width: 100%;
         }
+        .highlight {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Fillfire</h1>
+        <img src="logo.png" alt="Fillfire Logo">
+        <h1>Welcome to <span class="highlight">Fillfire</span></h1>
         <nav>
             <a href="#about">About Us</a>
             <a href="#projects">Our Projects</a>
@@ -76,6 +89,7 @@
         <div class="section" id="projects">
             <h2>Our Projects</h2>
             <p>Discover our family of websites designed to serve various needs and audiences. Each site reflects our commitment to quality and innovation.</p>
+            <img src="projects.jpg" alt="Our Projects" style="width: 100%; border-radius: 8px; margin-top: 10px;">
         </div>
 
         <div class="section" id="contact">
