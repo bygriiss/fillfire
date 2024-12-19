@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fillfire - Empowering Digital Solutions</title>
+    <title>Fillfire - Dijital Çözümler Gücü</title>
     <style>
         body {
             margin: 0;
@@ -90,37 +90,51 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Fillfire Logo">
-        <h1>Welcome to <span class="highlight">Fillfire</span></h1>
+        <img src="logo.png" alt="Fillfire Logosu">
+        <h1>Fillfire'a Hoş Geldiniz</h1>
         <nav>
-            <a href="#about">About Us</a>
-            <a href="#projects">Our Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#projeler">Projelerimiz</a>
+            <a href="#iletisim">İletişim</a>
         </nav>
     </header>
 
     <div class="container">
-        <div class="section" id="about">
-            <h2>About Fillfire</h2>
-            <p>Fillfire is dedicated to creating innovative websites and applications designed to benefit people worldwide. Our mission is to harness technology to empower and inspire.</p>
-            <a href="#projects" class="btn">Explore Projects</a>
+        <div class="section" id="hakkimizda">
+            <h2>Hakkımızda</h2>
+            <p>Fillfire, insanların yararına yenilikçi web siteleri ve uygulamalar oluşturmaya adanmıştır. Amacımız, teknolojiyi kullanarak insanları güçlendirmek ve ilham vermektir.</p>
+            <a href="#projeler" class="btn">Projeleri Keşfet</a>
         </div>
 
-        <div class="section" id="projects">
-            <h2>Our Projects</h2>
-            <p>We have built a diverse range of websites and applications aimed at solving real-world problems and enhancing digital experiences for everyone.</p>
-            <img src="projects.jpg" alt="Our Projects" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+        <div class="section" id="projeler">
+            <h2>Projelerimiz</h2>
+            <p>Gerçek dünya sorunlarını çözmeye ve dijital deneyimleri geliştirmeye yönelik çeşitli web siteleri ve uygulamalar geliştirdik.</p>
+            <img src="projects.jpg" alt="Projelerimiz" style="width: 100%; border-radius: 8px; margin-top: 15px;">
         </div>
 
-        <div class="section" id="contact">
-            <h2>Contact Us</h2>
-            <p>If you want to collaborate or learn more about our projects, feel free to reach out.</p>
-            <p>Email us at <a href="mailto:fillfireholding@gmail.com">fillfireholding@gmail.com</a></p>
+        <div class="section" id="iletisim">
+            <h2>İletişim</h2>
+            <p>Eğer bizimle iş birliği yapmak veya projelerimiz hakkında daha fazla bilgi edinmek isterseniz, lütfen bizimle iletişime geçin.</p>
+            <p>Bize e-posta gönderin: <a href="mailto:fillfireholding@gmail.com">fillfireholding@gmail.com</a></p>
         </div>
     </div>
 
     <footer>
-        &copy; 2024 Fillfire. All rights reserved.
+        &copy; 2024 Fillfire. Tüm hakları saklıdır.
     </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
