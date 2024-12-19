@@ -7,16 +7,18 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #444;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background-color: #ff7e5f;
             color: #fff;
             padding: 20px;
             text-align: center;
             position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header img {
             position: absolute;
@@ -26,45 +28,63 @@
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
         nav {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         nav a {
             color: #fff;
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: 40px auto;
             padding: 20px;
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         .section h2 {
             margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            color: #ff7e5f;
+            font-size: 2rem;
         }
         .highlight {
             background: linear-gradient(90deg, #ff7e5f, #feb47b);
             -webkit-background-clip: text;
             color: transparent;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #ff7e5f;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #feb47b;
         }
     </style>
 </head>
@@ -83,17 +103,19 @@
         <div class="section" id="about">
             <h2>About Fillfire</h2>
             <p>Fillfire is dedicated to creating innovative websites and applications designed to benefit people worldwide. Our mission is to harness technology to empower and inspire.</p>
+            <a href="#projects" class="btn">Explore Projects</a>
         </div>
 
         <div class="section" id="projects">
             <h2>Our Projects</h2>
-            <p>Explore our diverse range of websites and applications aimed at solving real-world problems and enhancing digital experiences for everyone.</p>
-            <img src="projects.jpg" alt="Our Projects" style="width: 100%; border-radius: 8px; margin-top: 10px;">
+            <p>We have built a diverse range of websites and applications aimed at solving real-world problems and enhancing digital experiences for everyone.</p>
+            <img src="projects.jpg" alt="Our Projects" style="width: 100%; border-radius: 8px; margin-top: 15px;">
         </div>
 
         <div class="section" id="contact">
             <h2>Contact Us</h2>
-            <p>Email us at <a href="mailto:info@fillfire.com">info@fillfire.com</a> to learn more about our projects and how we can collaborate to create impactful digital solutions.</p>
+            <p>If you want to collaborate or learn more about our projects, feel free to reach out.</p>
+            <p>Email us at <a href="mailto:fillfireholding@gmail.com">fillfireholding@gmail.com</a></p>
         </div>
     </div>
 
