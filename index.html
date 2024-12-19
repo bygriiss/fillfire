@@ -65,12 +65,11 @@
             font-weight: bold;
         }
         .projects-gallery {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            flex-wrap: wrap;
         }
         .project-item {
-            flex: 1 1 calc(33.333% - 20px);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
@@ -104,6 +103,11 @@
         .btn:hover {
             background-color: #feb47b;
         }
+        @media (max-width: 768px) {
+            .projects-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -129,19 +133,49 @@
             <p>Gerçek dünya sorunlarını çözmeye ve dijital deneyimleri geliştirmeye yönelik çeşitli web siteleri ve uygulamalar geliştirdik.</p>
             <div class="projects-gallery">
                 <div class="project-item">
-                    <img src="ogreticimiz_harika.jpg" alt="Öğreticimiz Harika">
+                    <img src="ogreticimizharika.png" alt="Öğreticimiz Harika">
                     <h3>Öğreticimiz Harika</h3>
                     <p>İlk eğitim sitemiz Öğreticimiz Harika, ücretsiz bir eğitim platformudur.</p>
                 </div>
                 <div class="project-item">
-                    <img src="egitimoon.jpg" alt="Eğitimoon">
+                    <img src="egitimoon.png" alt="Eğitimoon">
                     <h3>Eğitimoon</h3>
                     <p>İkinci eğitim sitemiz Eğitimoon, Öğreticimiz Harika gibi mini bir eğitim platformudur.</p>
                 </div>
                 <div class="project-item">
-                    <img src="newsouts_haber.jpg" alt="Newsouts Haber">
+                    <img src="newsoutshaber.png" alt="Newsouts Haber">
                     <h3>Newsouts Haber</h3>
                     <p>Newsouts Haber ise ilk haber platformumuzdur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="blorstv.png" alt="Blors Tv">
+                    <h3>Blors Tv</h3>
+                    <p>Blors Tv, dizi ve filmlerin yayınlandığı platformumuzdur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="kidslandotv.png" alt="Kidslando Tv">
+                    <h3>Kidslando Tv</h3>
+                    <p>Kidslando Tv, çocuklar için çizgi film ve dizi kanalıdır.</p>
+                </div>
+                <div class="project-item">
+                    <img src="newsoutsmedia.png" alt="Newsouts Media">
+                    <h3>Newsouts Media</h3>
+                    <p>Newsouts Media, ilk sosyal medya platformumuzdur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="yemekdetarif.png" alt="Yemekde Tarif">
+                    <h3>Yemekde Tarif</h3>
+                    <p>Yemekde Tarif yemek tarifleri içeren web sitemiz ve sosyal medya hesaplarımızdır.</p>
+                </div>
+                <div class="project-item">
+                    <img src="miniko.png" alt="Miniko">
+                    <h3>Miniko</h3>
+                    <p>Miniko, internetten teknolojik cihazların fiyatları ile alakalı bilgi veren yönlendirme platformudur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="editonya.png" alt="Editonya">
+                    <h3>Editonya</h3>
+                    <p>Editonya ise hala açılması planlanan, edit vb. şeyler yaptığımız web sitesi ve sosyal medya hesabıdır.</p>
                 </div>
             </div>
         </div>
