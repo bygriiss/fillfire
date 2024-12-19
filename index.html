@@ -64,6 +64,24 @@
             color: transparent;
             font-weight: bold;
         }
+        .projects-gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project-item {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            background: #fff;
+            padding: 15px;
+        }
+        .project-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
         footer {
             text-align: center;
             padding: 15px;
@@ -109,7 +127,23 @@
         <div class="section" id="projeler">
             <h2>Projelerimiz</h2>
             <p>Gerçek dünya sorunlarını çözmeye ve dijital deneyimleri geliştirmeye yönelik çeşitli web siteleri ve uygulamalar geliştirdik.</p>
-            <img src="projects.jpg" alt="Projelerimiz" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <img src="ogreticimiz_harika.jpg" alt="Öğreticimiz Harika">
+                    <h3>Öğreticimiz Harika</h3>
+                    <p>İlk eğitim sitemiz Öğreticimiz Harika, ücretsiz bir eğitim platformudur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="egitimoon.jpg" alt="Eğitimoon">
+                    <h3>Eğitimoon</h3>
+                    <p>İkinci eğitim sitemiz Eğitimoon, Öğreticimiz Harika gibi mini bir eğitim platformudur.</p>
+                </div>
+                <div class="project-item">
+                    <img src="newsouts_haber.jpg" alt="Newsouts Haber">
+                    <h3>Newsouts Haber</h3>
+                    <p>Newsouts Haber ise ilk haber platformumuzdur.</p>
+                </div>
+            </div>
         </div>
 
         <div class="section" id="iletisim">
